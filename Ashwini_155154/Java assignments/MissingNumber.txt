@@ -1,0 +1,17 @@
+import java.util.*;
+public class MissingNumber{
+
+     public static void main(String args[]){
+         int a[]={1,2,4,6,7,3,8};
+         int sum=0;
+         for(int i=1;i<=8;i++)
+         {
+             sum=sum+i;
+         }
+         int sum2=0;
+         for(int j=0;j<7;j++)
+         sum2=sum2+a[j];
+         int res=sum-sum2;
+         System.out.println("Missing number: "+res);
+     }
+}

@@ -1,0 +1,10 @@
+public class SmallestNumber{
+
+     public static void main(String args[]){
+         int a=13;
+         int b=76;
+         int c=11;
+        int d=((a<b)?((a<c)?a:c):((b<c)?b:c));
+        System.out.println("Smallest number:"+d);
+     }
+}

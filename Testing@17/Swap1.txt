@@ -1,0 +1,24 @@
+package JavaJUnitTesting;
+import static org.junit.Assert.*;
+import java.util.*;
+import org.junit.Test;
+
+public class Swap1
+{
+	@Test
+public void check()
+{
+		int a=13;
+        int b=76;
+        System.out.println("Before Swapping: a="+a+" and b="+b);
+        int c=a;
+        a=b;
+        b=c;
+       System.out.println("Before Swapping: a="+a+" and b="+b);
+        assertEquals(b,13);
+}
+	public void test() {
+		fail("Not yet implemented");
+	}
+}
+

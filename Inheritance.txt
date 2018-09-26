@@ -1,0 +1,132 @@
+package day_1;
+
+public class Person {
+    private String name, address;
+    public Person(String name, String address) {
+     this.name = name;
+     this.address = address;
+  }
+  
+  public String getName() {
+     return name;
+  }
+  public String getAddress() {
+     return address;
+  }
+  public void setAddress(String address) {
+     this.address = address;
+  }
+  public String toString() {
+     return "Person[name= "+name+" ,address= "+address+"]";
+  }
+}
+
+
+package day_1;
+
+public class Student extends Person {
+	   
+	   private String program;   
+	   private int year; 
+	   private double fee;     
+	    
+	   public Student(String name,String address,String program,int year,double fee) {
+	      super(name, address);
+	      this.program=program;
+		  this.year=year;
+		  this.fee=fee;
+	   }
+	   public String getProgram()
+	   {
+		   return program;
+	   }
+	   public void setProgram(String program)
+	   {
+		   this.program=program;
+	   }
+	   public int getYear()
+	   {
+		   return year;
+	   }
+	   public void setYear(int year)
+	   {
+		   this.year=year;
+	   }
+	   public double getFee()
+	   {
+		   return fee;
+	   }
+	   public void setFee(double fee)
+	   {
+		   this.fee=fee;
+	   }
+	   public String toString() {
+	      return "Student[" + super.toString()+" ,program= "+program+" ,year= "+year+" ,fee= "+fee+" ]";
+	   }
+}
+
+
+
+
+package day_1;
+
+public class Staff extends Person {
+	   
+	   private String school;   
+	   private double pay;     
+	    
+	   public Staff(String name,String address,String school,double pay) {
+	      super(name, address);
+	      this.school=school;
+		  this.pay=pay;
+		  
+	   }
+	   public String getSchool()
+	   {
+		   return school;
+	   }
+	   public void setSchool(String school)
+	   {
+		   this.school=school;
+	   }
+	   public double getPay()
+	   {
+		   return pay;
+	   }
+	   public void setPay(double pay)
+	   {
+		   this.pay=pay;
+	   }
+	   public String toString() {
+	      return "Staff[" + super.toString()+" ,school= "+school+" ,pay= "+pay+" ]";
+	   }
+}
+
+
+
+package day_1;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		Student ob=new Student("Ashwini","Teghoria","CSE",2018,7890.87);
+		Staff ob1=new Staff("Ashwini","Teghoria","Stephens",78965.87);
+		String s1=ob.toString();
+		String s2=ob1.toString();
+		System.out.println(s1);
+		ob.setProgram("BTech");
+		System.out.println("Program: "+ob.getProgram());
+		ob.setYear(2014);
+		System.out.println("Year: "+ob.getYear());
+		ob.setFee(1234.90);
+		System.out.println("Fee: "+ob.getFee());
+		
+		System.out.println(s2);
+		ob1.setSchool("Saltlake");
+		System.out.println("School: "+ob1.getSchool());
+		ob1.setPay(20140.89);
+		System.out.println("Pay: "+ob1.getPay());
+
+	}
+
+}

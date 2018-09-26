@@ -1,0 +1,33 @@
+class Circle
+{
+double radius;
+String color;
+Circle()
+{
+   radius=1.0;
+   color="red";
+}
+Circle(double r)
+{
+   radius=r;
+}
+double getRadius()
+{
+   return radius;
+}
+double getArea()
+{
+   return (3.14*radius*radius);
+}
+}
+public class CircleTest
+{
+public static void main(String[] args)
+{
+   Circle ob=new Circle(1.0);
+   double a,r;
+   r=ob.getRadius();
+   a=ob.getArea();
+   System.out.println("Radius= "+r+"Area= "+a);
+}
+}

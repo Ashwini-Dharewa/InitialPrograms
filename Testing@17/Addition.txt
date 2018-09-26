@@ -1,0 +1,23 @@
+package JavaJUnitTesting;
+import java.util.*;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Testing17 {
+
+	@Test
+	public void add() {
+         System.out.println("Enter the numbers one by one:");
+         Scanner sc=new Scanner(System.in);
+         int a=sc.nextInt();
+         int b=sc.nextInt();
+         int c=a+b;
+         assertEquals(c,(a+b));
+     }
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

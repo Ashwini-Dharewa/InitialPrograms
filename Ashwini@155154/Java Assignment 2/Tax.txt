@@ -1,0 +1,17 @@
+import java.util.*;
+public class Tax {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        double x=sc.nextDouble();
+        double t=0;
+        if(x<=180000)
+        t=0;
+        else if(x>180000 && x<=300000)
+        t=0.1*x;
+        else if(x>300000 && x<=500000)
+        t=0.2*x;
+        else if(x>500000 && x<1000000)
+        t=0.3*x;
+        System.out.println("Tax payable is Rs. "+t);
+    }
+}

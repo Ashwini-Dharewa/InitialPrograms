@@ -1,0 +1,14 @@
+import java.util.*;
+public class StringPalin {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        StringTokenizer st=new StringTokenizer(s);
+        StringBuffer a;
+        while(st.hasMoreTokens())
+        {
+            a=new StringBuffer(st.nextToken());
+            System.out.print(a.reverse()+" ");
+        }
+    }
+}

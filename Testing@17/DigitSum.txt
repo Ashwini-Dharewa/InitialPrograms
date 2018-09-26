@@ -1,0 +1,25 @@
+package JavaJUnitTesting;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DigitSum
+{
+	@Test
+public void check()
+{
+		int sum = 0;
+        int n = 968; 
+        while (n != 0)
+        {
+            sum = sum + n % 10;
+            n = n/10;
+        }
+        System.out.println(sum);
+        assertEquals(sum,23);
+}
+	public void test() {
+		fail("Not yet implemented");
+	}
+}
+

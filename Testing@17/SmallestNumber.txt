@@ -1,0 +1,22 @@
+package JavaJUnitTesting;
+import static org.junit.Assert.*;
+import java.util.*;
+import org.junit.Test;
+
+public class SmallestNumber
+{
+	@Test
+public void check()
+{
+		int a=13;
+        int b=76;
+        int c=11;
+       int d=((a<b)?((a<c)?a:c):((b<c)?b:c));
+       System.out.println("Smallest number:"+d);
+        assertEquals(d,11);
+}
+	public void test() {
+		fail("Not yet implemented");
+	}
+}
+
